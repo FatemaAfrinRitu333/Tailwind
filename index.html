@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,30 +8,169 @@
     <title>Tailwind Penguin Fashion</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                price: '#FABE4C',
+                title: '#363958',
+              }
+            }
+          }
+        }
+      </script>
 </head>
+
 <body>
-    <header class="container mx-auto">
+    <header class="bg-amber-100">
         <nav></nav>
-        <div class="banner">
-            <div class="flex">
-                <div>
-                    <h1 class="text-7xl text-blue-900 font-bold uppercase"><span class="text-amber-400">Be the Penguins</span><br> of Winter</h1>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    <button class="py-4 px-8 bg-gradient-to-b from-[#a4bc46] to-[#85a019] rounded-lg text-white">
-                        <i class="fa-solid fa-cart-shopping mr-2"></i> BUY NOW
-                    </button>
-                </div>
-                <div>
-                    <img src="images/model.png" alt="picture of a girl">
-                </div>
+        <div class="container mx-auto banner flex justify-center items-center mt-12 py-12">
+            <div class="space-y-6 px-4">
+                <h1 class="text-7xl text-blue-900 font-bold uppercase"><span class="text-amber-400">Be the Penguins</span><br> of Winter</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <button class="py-4 px-8 bg-gradient-to-b from-[#a4bc46] to-[#85a019] rounded-lg text-white">
+                    <i class="fa-solid fa-cart-shopping mr-2"></i> BUY NOW
+                </button>
+            </div>
+            <div class="px-4">
+                <img src="images/model.png">
             </div>
         </div>
     </header>
-    <main>
-
+    <main class="container m-auto">
+        <section class="woman-jacket my-12">
+            <h2 class="text-5xl uppercase font-bold text-title">Woman Jacket</h2>
+            <div class="jacket-display grid grid-cols-3 my-8 gap-8">
+                <div class="jacket-card p-5 space-y-6 rounded-2xl shadow-lg">
+                    <div class="img bg-slate-200 rounded-2xl p-5">
+                        <img src="images/jacket-3.png">
+                    </div>
+                    <div class="card-body">
+                    </div>
+                        <h2 class="text-2xl text-title font-bold">Yellow Coat Jacket</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium vel ad, eligendi nemo nisi officiis.</p>
+                        <div class="card-footer flex justify-between">
+                            <h2 class="text-4xl font-semibold text-price">$233</h2>
+                            <button class="py-4 px-8 bg-gradient-to-b from-[#a4bc46] to-[#85a019] rounded-lg text-white">
+                                <i class="fa-solid fa-cart-shopping mr-2"></i> BUY NOW
+                            </button>
+                        </div>
+                </div>
+                <div class="jacket-card p-5 space-y-6 rounded-2xl shadow-lg">
+                    <div class="img bg-slate-200 rounded-2xl p-5">
+                        <img src="images/jacket-3.png">
+                    </div>
+                    <div class="card-body">
+                    </div>
+                        <h2 class="text-2xl text-title font-bold">Yellow Coat Jacket</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium vel ad, eligendi nemo nisi officiis.</p>
+                        <div class="card-footer flex justify-between">
+                            <h2 class="text-4xl font-semibold text-price">$233</h2>
+                            <button class="py-4 px-8 bg-gradient-to-b from-[#a4bc46] to-[#85a019] rounded-lg text-white">
+                                <i class="fa-solid fa-cart-shopping mr-2"></i> BUY NOW
+                            </button>
+                        </div>
+                </div>
+                <div class="jacket-card p-5 space-y-6 rounded-2xl shadow-lg">
+                    <div class="img bg-slate-200 rounded-2xl p-5">
+                        <img src="images/jacket-3.png">
+                    </div>
+                    <div class="card-body">
+                    </div>
+                        <h2 class="text-2xl text-title font-bold">Yellow Coat Jacket</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium vel ad, eligendi nemo nisi officiis.</p>
+                        <div class="card-footer flex justify-between">
+                            <h2 class="text-4xl font-semibold text-price">$233</h2>
+                            <button class="py-4 px-8 bg-gradient-to-b from-[#a4bc46] to-[#85a019] rounded-lg text-white">
+                                <i class="fa-solid fa-cart-shopping mr-2"></i> BUY NOW
+                            </button>
+                        </div>
+                </div>
+            </div>
+        </section>
+        <section class="man-jacket my-12 container mx-auto">
+            <h2 class="text-5xl uppercase font-bold text-title">Man Jacket</h2>
+            <div class="jacket-display grid grid-cols-3 my-8 gap-8">
+                <div class="jacket-card p-5 space-y-6 rounded-2xl shadow-lg">
+                    <div class="img bg-slate-200 rounded-2xl p-5">
+                        <img src="images/jacket-6.png">
+                    </div>
+                    <div class="card-body">
+                    </div>
+                        <h2 class="text-2xl text-title font-bold">Snowboard Jacket Mens</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium vel ad, eligendi nemo nisi officiis.</p>
+                        <div class="card-footer flex justify-between">
+                            <h2 class="text-4xl font-semibold text-price">$233</h2>
+                            <button class="py-4 px-8 bg-gradient-to-b from-[#a4bc46] to-[#85a019] rounded-lg text-white">
+                                <i class="fa-solid fa-cart-shopping mr-2"></i> BUY NOW
+                            </button>
+                        </div>
+                </div>
+                <div class="jacket-card p-5 space-y-6 rounded-2xl shadow-lg">
+                    <div class="img bg-slate-200 rounded-2xl p-5">
+                        <img src="images/jacket-5.png">
+                    </div>
+                    <div class="card-body">
+                    </div>
+                        <h2 class="text-2xl text-title font-bold">Man Leather Jackets</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium vel ad, eligendi nemo nisi officiis.</p>
+                        <div class="card-footer flex justify-between">
+                            <h2 class="text-4xl font-semibold text-price">$233</h2>
+                            <button class="py-4 px-8 bg-gradient-to-b from-[#a4bc46] to-[#85a019] rounded-lg text-white">
+                                <i class="fa-solid fa-cart-shopping mr-2"></i> BUY NOW
+                            </button>
+                        </div>
+                </div>
+                <div class="jacket-card p-5 space-y-6 rounded-2xl shadow-lg">
+                    <div class="img bg-slate-200 rounded-2xl p-5">
+                        <img src="images/jacket-4.png">
+                    </div>
+                    <div class="card-body">
+                    </div>
+                        <h2 class="text-2xl text-title font-bold">Man Casual Jackets</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium vel ad, eligendi nemo nisi officiis.</p>
+                        <div class="card-footer flex justify-between">
+                            <h2 class="text-4xl font-semibold text-price">$233</h2>
+                            <button class="py-4 px-8 bg-gradient-to-b from-[#a4bc46] to-[#85a019] rounded-lg text-white">
+                                <i class="fa-solid fa-cart-shopping mr-2"></i> BUY NOW
+                            </button>
+                        </div>
+                </div>
+            </div>
+        </section>
+        <section class="container mx-auto grid grid-cols-1 gap-8 my-12 items-center md:grid-cols-2">
+            <div class="order-2 md:order-1 bg-slate-200 rounded-2xl p-5 flex gap-3 shadow-lg">
+                <img class="w-20 h-20" src="images/box.png" alt="">
+                <div>
+                    <h3>Find The Perfect Match</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur inventore omnis ipsam.</p>
+                </div>
+            </div>
+            <div class="order-1 md:order-2 rounded-2xl p-5 row-span-3">
+                <img src="images/shopping.png" alt="">
+            </div>
+            <div class="order-3 bg-slate-200 rounded-2xl p-5 flex gap-3 shadow-lg">
+                <img class="w-20 h-20" src="images/house.png" alt="">
+                <div>
+                    <h3>Find The Perfect Match</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur inventore omnis ipsam.</p>
+                </div>
+            </div>
+            <div class="order-4 bg-slate-200 rounded-2xl p-5 flex gap-3 shadow-lg">
+                <img class="w-20 h-20" src="images/question.png" alt="">
+                <div>
+                    <h3>Find The Perfect Match</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur inventore omnis ipsam.</p>
+                </div>
+            </div>
+        </section>
     </main>
+
     <footer>
 
     </footer>
 </body>
+
 </html>
